@@ -1,0 +1,12 @@
+#!/usr/bin/env groovy
+pipeline{
+  agent{
+  stages{
+    stage('build')
+      steps{
+        echo 'Hello'
+        sh 'java --version'
+      }
+  }
+  }
+}
